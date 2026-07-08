@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Express Server Creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ES"
+  ],
+  "author": "Navin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
