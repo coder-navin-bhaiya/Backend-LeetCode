@@ -6,26 +6,29 @@ async function main() {
           //Bookstore database ka name hai. Agar Bookstore eist krta haio toh thik warna apna aap ban jayega
 
 
-    const userSchema = new Schema({
-        name: String,
-        age: Number,
-        city: String,
-        gender: String
-    })
+    // const userSchema = new Schema({
+    //     name: String,
+    //     age: Number,
+    //     city: String,
+    //     gender: String
+    // })
 
 
-// Model ko create krna === collection ko create krna(Table create karna)
-//Or esko ek Class bhi bol sakta hai
-const myUser = mongoose.model('user', userSchema); //User collection ka name hai and userscehma ye batata hai ke document main kon kon sa field hoga
+//! Model ko create krna === collection ko create krna(Table create karna)
+//! Or esko ek Class bhi bol sakta hai
+// const myUser = mongoose.model('user', userSchema); //User collection ka name hai and userscehma ye batata hai ke document main kon kon sa field hoga
 
-//Object create krna or document create krna
-const user1 = new myUser({name: "Navin"});
-await user1.save();
+//!Object create krna or document create krna
+// const user1 = new myUser({name: "Navin"});
+// await user1.save();
+
 }
 
-main()
-.then(()=>console.log("Connected to DB"))
-.catch((err)=>console.log(err));
+// main() 
+// .then(()=>console.log("Connected to DB"))
+// .catch((err)=>console.log(err));
+
+module.exports = main;
 
 
 //sabsa pehla cluster --> fir database --> fir collection -->fir document
